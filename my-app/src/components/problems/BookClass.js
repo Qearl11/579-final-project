@@ -1,13 +1,15 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Button } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import classesData from '../util/class';
 
 const BookClass = () => {
-    // Handler for when a class card is clicked
+    const navigate = useNavigate();
     const handleClassClick = (cls) => {
         // You can handle the click event here, for example, open a modal with class details or navigate to a class-specific page
-        console.log(`Class clicked: ${cls.id}`);
+        // console.log(`Class clicked: ${cls.id}`);
+        navigate(`/choose-date/${cls.id}`);
     };
 
     return (
@@ -28,9 +30,6 @@ const BookClass = () => {
                                 <h3>{cls.class}</h3>
                                 <p>Type: {cls.type}</p>
                                 <p>Coach: {cls.coach}</p>
-                                <Link to={`/class/${cls.id}`}>
-                                    <Button variant="primary">Go to Calendar</Button>
-                                </Link>
                             </div>
 
                         </div>

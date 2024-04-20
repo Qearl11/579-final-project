@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'; // default styling provided by react-calendar
+// import { useParams } from 'react-router-dom';
 
 const ChooseDate = () => {
     const [date, setDate] = useState(new Date());
