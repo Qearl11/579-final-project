@@ -1,0 +1,88 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #55aaff; /* Lighter color for navigation bar */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 20px;
+    /* width: calc(50% - 20px); Two sections per row with 20px margin between them */
+    transition: background-color 0.3s ease;
+}
+
+section:hover {
+    background-color: #f7f7f7; /* Change background color on hover */
+}
+
+section.selected {
+    background-color: #3843d0; /* Change background color when selected */
+    animation: selectEffect 0.5s ease;
+}
+
+@keyframes selectEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Add more specific styling for each section as needed */
+.calendar {
+    /* Calendar styling */
+}
+
+.motivational-dashboard {
+    /* Motivational quotes display styling */
+}
+
+.class-booking {
+    /* Class booking system styling */
+}
+
+.personal-dashboard {
+    /* Personal dashboard styling */
+}
