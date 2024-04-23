@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-function Motivation() {
+
+function Motivate() {
   const [quote, setQuote] = useState("");
 
   useEffect(() => {
@@ -26,4 +27,4 @@ function Motivation() {
   );
 }
 
-export default Motivation;
+export default Motivate;
