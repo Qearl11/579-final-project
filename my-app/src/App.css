@@ -37,6 +37,21 @@
   }
 }
 
+.sidebar {
+  width: 200px; /* Adjust width as needed */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2; /* Sidebar background color */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.content {
+  margin-left: 200px; /* Account for the width of the sidebar */
+  padding: 20px; /* Add padding as needed */
+}
+
 .class-cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -93,5 +108,41 @@
 .class-card p {
   font-size: 15px;
   color: #666;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.calendar-container {
+  width: 70%;
+  margin-right: 20px; /* Add margin to create space between calendar and reservation box */
+}
+
+.reservation-box {
+  width: 30%; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.book-class {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* .motivate {
+  border: black 1px solid;
+} */
+
+.course-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin: 10px;
+
 }
 
